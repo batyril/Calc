@@ -13,6 +13,15 @@ UI_ELEMETS.CLEAR.addEventListener("click",function(){
 })
 
 UI_ELEMETS.CALCULATOR.onclick = function(event) {
+    if(UI_ELEMETS.OUTPUT.textContent.length >= 4){
+        UI_ELEMETS.OUTPUT.style.fontSize = "60px"
+        if(UI_ELEMETS.OUTPUT.textContent.length >= 8){
+            UI_ELEMETS.OUTPUT.style.fontSize = "40px"
+        }
+    }
+    if(UI_ELEMETS.OUTPUT.textContent.length < 4){
+        UI_ELEMETS.OUTPUT.style.fontSize = "80px"
+    }
     let isButtons = event.target.textContent === 'C' || event.target.textContent === '=' || event.target.className === 'delete' || event.target.className === 'calculator_block' || event.target.className === 'row row-1' || event.target.className === 'row row-2' || event.target.className === 'row row-3' || event.target.className === 'row row-4'  || event.target.className === 'row row-5' || event.target.className === 'row row-6' || event.target.className === 'output' ;
     if(isButtons){
         return
@@ -85,7 +94,8 @@ function calc(a, b, operator) {
         if (b === 0) { 
             result = "Error!";
         } else {
-            result = a / b;
+            result =  a / b;
+            result = result.toFixed(2)
         } 
     }  else {
         result = "unknown";
@@ -93,6 +103,8 @@ function calc(a, b, operator) {
 
     UI_ELEMETS.OUTPUT.textContent = result;
 }
+
+
 
 
 

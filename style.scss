@@ -1,7 +1,17 @@
-@import "../css/normalize.css";
+@import "css/normalize.css";
 
 *{
     font-family: 'Work Sans', sans-serif;
+}
+
+.name_project{
+    font-size: 70px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    p{
+        margin: 0px;
+    }
 }
 
 .number{
@@ -62,6 +72,9 @@
                 font-weight: 300;
                 line-height: 96px;
                 text-align: right;
+                .output{
+                    font-size: 80px;
+                }
             }
             .row-2{
                 display: flex;
