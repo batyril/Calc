@@ -1,0 +1,165 @@
+@import "../css/normalize.css";
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.number{
+    display: flex;
+    height: 72px;
+    width: 69px;
+    border-radius: 24px;
+    background-color: rgb(46, 47, 56);
+    justify-content:center;
+    align-items: center;
+    font-size: 32px;
+    cursor: pointer;
+    &:hover{
+        background: rgba(205, 214, 219, 0.5);
+        transition-duration: 1s;
+    }
+}
+.operator{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 69px;
+    height: 72px;
+    margin-left: 16px;
+    border-radius: 24px;
+    background-color: rgb(75, 94, 252);
+    font-size: 32px;
+    cursor: pointer;
+    &:hover{
+        background: rgba(75, 94, 252,  0.5);
+        transition-duration: 1s;
+    } 
+}
+.calculator{
+    padding: 50px;
+    background: rgb(0,0,0);
+    background: radial-gradient(circle, rgba(0,0,0,0) 0%, rgba(75,94,252,1) 84%);
+    .container{
+        margin: 0 auto;
+        width: 364px;
+        .calculator_block{
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            display: flex;
+            flex-direction: column;
+            min-height: 583px;
+            background-color: rgb(23, 23, 28);
+            border-radius: 24px;
+            color:white;
+
+            .row-1{
+                margin-bottom: 20px;
+                height: 96px;
+                align-self: stretch;
+                flex-grow: 0;
+                font-size: 96px;
+                font-weight: 300;
+                line-height: 96px;
+                text-align: right;
+            }
+            .row-2{
+                display: flex;
+                margin-bottom: 20px;
+                .clear{ 
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    height: 72px;
+                    width: 154px;
+                    border-radius: 24px;
+                    background-color: rgb(46, 47, 56);
+                    font-size: 32px;
+                    cursor: pointer;
+                }
+                .clear:hover:hover{
+                    background: rgba(205, 214, 219, 0.5);
+                    transition-duration: 1s;
+                }
+                .delete{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    width: 69px;
+                    height: 72px;
+                    margin-left: 16px;
+                    flex-grow: 0;
+                    border-radius: 24px;
+                    background-color: rgb(46, 47, 56);
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(205, 214, 219, 0.5);
+                        transition-duration: 1s;
+                    }
+                }
+
+            }
+            .row-3{
+                display: flex;
+                margin-bottom: 20px;
+
+                .number-8{
+                    margin-left: 16px;
+                }
+
+                .number-9{
+                    margin-left: 16px;
+                }
+            }
+
+            .row-4{
+                display: flex;
+                margin-bottom: 20px;
+
+                .number-5{
+                    margin-left: 16px;
+                }
+
+                .number-6{
+                    margin-left: 16px;
+                }
+                   
+            }
+            .row-5{
+                display: flex;
+                margin-bottom: 20px;
+                .number-2{
+                    margin-left: 16px;
+                } 
+                .number-3{
+                    margin-left: 16px;
+ 
+                } 
+            }
+
+            .row-6{
+                display: flex;
+                .number-0{
+                    height: 72px;
+                    width: 239px;
+                } 
+                .equally{
+                    display: flex;
+                    justify-content:center;
+                    align-items: center;
+                    width: 69px;
+                    height: 72px;
+                    margin-left: 16px;
+                    border-radius: 24px;
+                    background-color: rgb(75, 94, 252);
+                    font-size: 32px;
+                    cursor: pointer;
+                    &:hover{
+                        background: rgba(75, 94, 252,  0.5);
+                        transition-duration: 1s;
+                    } 
+                }
+            }
+        }
+    }
+}        
